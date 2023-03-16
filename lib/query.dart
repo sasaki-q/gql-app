@@ -6,7 +6,8 @@ const String getItems = """
   query GetItems() {
     getItems() {
       id,
-      text
+      text,
+      price
     }
   }
 """;
