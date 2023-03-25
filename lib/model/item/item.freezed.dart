@@ -20,7 +20,7 @@ Item _$ItemFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Item {
-  String get id => throw _privateConstructorUsedError;
+  int get id => throw _privateConstructorUsedError;
   String get text => throw _privateConstructorUsedError;
   int get price => throw _privateConstructorUsedError;
 
@@ -34,7 +34,7 @@ abstract class $ItemCopyWith<$Res> {
   factory $ItemCopyWith(Item value, $Res Function(Item) then) =
       _$ItemCopyWithImpl<$Res, Item>;
   @useResult
-  $Res call({String id, String text, int price});
+  $Res call({int id, String text, int price});
 }
 
 /// @nodoc
@@ -58,7 +58,7 @@ class _$ItemCopyWithImpl<$Res, $Val extends Item>
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -77,7 +77,7 @@ abstract class _$$_ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
       __$$_ItemCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, String text, int price});
+  $Res call({int id, String text, int price});
 }
 
 /// @nodoc
@@ -97,7 +97,7 @@ class __$$_ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res, _$_Item>
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -118,7 +118,7 @@ class _$_Item implements _Item {
   factory _$_Item.fromJson(Map<String, dynamic> json) => _$$_ItemFromJson(json);
 
   @override
-  final String id;
+  final int id;
   @override
   final String text;
   @override
@@ -159,14 +159,14 @@ class _$_Item implements _Item {
 
 abstract class _Item implements Item {
   const factory _Item(
-      {required final String id,
+      {required final int id,
       required final String text,
       required final int price}) = _$_Item;
 
   factory _Item.fromJson(Map<String, dynamic> json) = _$_Item.fromJson;
 
   @override
-  String get id;
+  int get id;
   @override
   String get text;
   @override

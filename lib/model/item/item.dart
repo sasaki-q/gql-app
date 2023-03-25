@@ -8,7 +8,7 @@ part 'item.g.dart';
 @freezed
 class Item with _$Item {
   const factory Item({
-    required String id,
+    required int id,
     required String text,
     required int price,
   }) = _Item;
